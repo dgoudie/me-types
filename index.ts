@@ -1,0 +1,43 @@
+export interface Info {
+    name: string;
+    title: string;
+    links: Link[];
+    about: string[];
+    education: EducationItem;
+    workExperience: WorkExperienceItem[];
+    interests: string[];
+    topSkills: TopSkillItem[];
+    builtWith: BuiltWithItem[];
+}
+
+export interface Link {
+    text: string;
+    link: string;
+    icon: string;
+    textForPrint: string;
+}
+
+export interface EducationItem {
+    iconUrl: string;
+    title: string;
+    secondaryInfo: string[];
+}
+
+export interface WorkExperienceItem {
+    iconUrl: string;
+    company: string;
+    jobTitle: string;
+    startDate: Date;
+    endDate: Date;
+}
+
+export interface TopSkillItem {
+    name: string;
+    percentage: number;
+}
+
+export interface BuiltWithItem {
+    iconUrl: string;
+    name: string;
+    link?: string;
+}

@@ -1,0 +1,27 @@
+{
+    "name": "me-types",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "tsc": "tsc",
+        "release": "release-it --ci --patch",
+        "release-minor": "release-it --ci --minor",
+        "release-major": "release-it --ci --major"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dgoudie/me-types.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dgoudie/me-types/issues"
+    },
+    "homepage": "https://github.com/dgoudie/me-types#readme",
+    "devDependencies": {
+        "typescript": "^3.9.3",
+        "release-it": "^13.6.1"
+    }
+}
