@@ -1,6 +1,6 @@
 {
     "name": "@stan/me-types",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "types for resume sitepm",
     "main": "dist/index.js",
     "files": [
