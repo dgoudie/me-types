@@ -3,7 +3,7 @@ export interface Info {
     title: string;
     links: Link[];
     about: string[];
-    education: EducationItem;
+    education: EducationItem[];
     workExperience: WorkExperienceItem[];
     interests: string[];
     topSkills: TopSkillItem[];
