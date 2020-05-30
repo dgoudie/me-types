@@ -1,8 +1,12 @@
 {
     "name": "me-types",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "version": "0.0.0",
+    "description": "types for resume sitepm",
+    "main": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "types": "dist/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "tsc": "tsc",
@@ -21,7 +25,7 @@
     },
     "homepage": "https://github.com/dgoudie/me-types#readme",
     "devDependencies": {
-        "typescript": "^3.9.3",
-        "release-it": "^13.6.1"
+        "release-it": "^13.6.1",
+        "typescript": "^3.9.3"
     }
 }
