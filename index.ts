@@ -39,5 +39,10 @@ export interface TopSkillItem {
 export interface BuiltWithItem {
     iconUrl: string;
     name: string;
-    link?: string;
+    links?: BuiltWithItemLink[];
+}
+
+export interface BuiltWithItemLink {
+    text: string;
+    url: string;
 }
