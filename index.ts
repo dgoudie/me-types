@@ -13,7 +13,7 @@ export interface Info {
 export interface Link {
     text: string;
     link: string;
-    icon: string;
+    faIcon: string;
     textForPrint: string;
 }
 
