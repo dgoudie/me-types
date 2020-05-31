@@ -29,6 +29,7 @@ export interface WorkExperienceItem {
     jobTitle: string;
     startDate: Date;
     endDate: Date;
+    description: string;
 }
 
 export interface TopSkillItem {
