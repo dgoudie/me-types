@@ -15,6 +15,7 @@ export interface Link {
     link: string;
     faIcon: string;
     textForPrint: string;
+    name: string;
 }
 
 export interface EducationItem {
