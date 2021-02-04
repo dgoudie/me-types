@@ -1,3 +1,5 @@
+import { Elements, HandleProps } from 'react-flow-renderer';
+
 export interface Info {
     name: string;
     title: string;
@@ -7,7 +9,7 @@ export interface Info {
     workExperience: WorkExperienceItem[];
     interests: string[];
     topSkills: TopSkillItem[];
-    builtWith: BuiltWithItem[];
+    websiteStackElements: Elements<WebsiteStackElementData>;
 }
 
 export interface Link {
@@ -47,4 +49,8 @@ export interface BuiltWithItem {
 export interface BuiltWithItemLink {
     text: string;
     url: string;
+}
+
+export interface WebsiteStackElementData {
+    handles: HandleProps[];
 }
