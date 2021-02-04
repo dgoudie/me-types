@@ -30,10 +30,14 @@
     "devDependencies": {
         "release-it": "^13.6.1",
         "typescript": "^4",
-        "react-flow-renderer": "^8.7.0"
+        "react-flow-renderer": "^8.7.0",
+        "react": "^16.8.0",
+        "@types/resize-observer-browser": "^0.1.5",
+        "@types/react": "^16.8.0",
+        "@types/d3": "^6.3.0"
     },
     "peerDependencies": {
         "react-flow-renderer": "^8.7.0",
-        "typescript": "^4"
+        "typescript": "^4.1"
     }
 }
