@@ -46,6 +46,8 @@ export interface BuiltWithItemLink {
 }
 export interface WebsiteStackElementData {
     handles: HandleProps[];
-    row: number;
+    yPosition: number;
     column: 1 | 2 | 3;
+    title: string;
+    imageUrl: string;
 }
