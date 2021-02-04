@@ -1,56 +1,102 @@
-import { Elements, HandleProps } from 'react-flow-renderer';
+import 'reflect-metadata';
 
-export interface Info {
+import { Elements, HandleProps } from 'react-flow-renderer';
+import { Field, ObjectType, Query, Resolver } from 'type-graphql';
+
+@ObjectType()
+export class Info {
+    @Field()
     name: string;
+    @Field()
     title: string;
+    @Field()
     links: Link[];
+    @Field()
     about: string[];
+    @Field()
     education: EducationItem[];
+    @Field()
     workExperience: WorkExperienceItem[];
+    @Field()
     interests: string[];
+    @Field()
     topSkills: TopSkillItem[];
+    @Field()
     websiteStackElements: Elements<WebsiteStackElementData>;
 }
-
-export interface Link {
+@ObjectType()
+export class Link {
+    @Field()
     text: string;
+
+    @Field()
     link: string;
+
+    @Field()
     faIcon: string;
+
+    @Field()
     textForPrint: string;
+
+    @Field()
     name: string;
 }
-
-export interface EducationItem {
+@ObjectType()
+export class EducationItem {
+    @Field()
     iconUrl: string;
+
+    @Field()
     title: string;
+
+    @Field()
     secondaryInfo: string[];
 }
-
-export interface WorkExperienceItem {
+@ObjectType()
+export class WorkExperienceItem {
+    @Field()
     iconUrl: string;
+
+    @Field()
     company: string;
+
+    @Field()
     jobTitle: string;
+
+    @Field()
     startDate: Date;
+
+    @Field()
     endDate: Date;
+
+    @Field()
     description: string;
 }
-
-export interface TopSkillItem {
+@ObjectType()
+export class TopSkillItem {
+    @Field()
     name: string;
+
+    @Field()
     percentage: number;
 }
-
-export interface BuiltWithItem {
+@ObjectType()
+export class BuiltWithItem {
+    @Field()
     iconUrl: string;
+    @Field()
     name: string;
+    @Field({ nullable: true })
     links?: BuiltWithItemLink[];
 }
-
-export interface BuiltWithItemLink {
+@ObjectType()
+export class BuiltWithItemLink {
+    @Field()
     text: string;
+    @Field()
     url: string;
 }
-
-export interface WebsiteStackElementData {
+@ObjectType()
+export class WebsiteStackElementData {
     handles: HandleProps[];
 }
