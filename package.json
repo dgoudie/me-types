@@ -41,11 +41,5 @@
         "@types/resize-observer-browser": "^0.1.5",
         "@types/react": "^16.8.0",
         "@types/d3": "^6.3.0"
-    },
-    "dependencies": {
-        "class-validator": "^0.13.1",
-        "graphql": "^15.5.0",
-        "reflect-metadata": "^0.1.13",
-        "type-graphql": "^1.1.1"
     }
 }

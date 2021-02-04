@@ -1,7 +1,5 @@
 {
     "compilerOptions": {
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
         "module": "commonjs",
         "esModuleInterop": true,
         "target": "es2018",
@@ -11,6 +9,6 @@
         "outDir": "dist",
         "baseUrl": "."
     },
-    "lib": ["es2018", "esnext.asynciterable"],
+    "lib": ["es2018"],
     "include": ["index.ts"]
 }
