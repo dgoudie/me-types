@@ -46,4 +46,6 @@ export interface BuiltWithItemLink {
 }
 export interface WebsiteStackElementData {
     handles: HandleProps[];
+    row: number;
+    column: 1 | 2 | 3;
 }
