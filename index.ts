@@ -48,6 +48,7 @@ export interface WebsiteStackElementData {
     handles: HandleProps[];
     yPosition: number;
     column: 1 | 2 | 3;
+    columnSpan?: 1 | 2 | 3;
     title: string;
     imageUrl: string;
 }
