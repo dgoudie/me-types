@@ -9,7 +9,7 @@ export interface Info {
     workExperience: WorkExperienceItem[];
     interests: string[];
     topSkills: TopSkillItem[];
-    websiteStackElements: Elements<WebsiteStackElementData>;
+    websiteStackElements: Elements<WebsiteStackGraphElementData>;
 }
 export interface Link {
     text: string;
