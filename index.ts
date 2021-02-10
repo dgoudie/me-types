@@ -45,7 +45,7 @@ export class WebsiteStackItemInfo {
         this.imageUrl = props.imageUrl;
     }
 }
-export interface WebsiteStackGraphElementData extends WebsiteStackItemInfo {
+export interface WebsiteStackG raphElementData extends WebsiteStackItemInfo {
     handles?: HandleProps[];
     yPosition: number;
     column: 1 | 2 | 3;
