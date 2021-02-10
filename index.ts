@@ -36,20 +36,12 @@ export interface TopSkillItem {
     percentage: number;
 }
 
-export class WebsiteStackItemInfo {
+export interface WebsiteStackItemInfo {
     title: string;
     imageUrl: string;
     description: string;
     links?: WebsiteStackItemInfoLink[];
     additionalImageUrls?: string[];
-
-    constructor(props: WebsiteStackItemInfo) {
-        this.title = props.title;
-        this.imageUrl = props.imageUrl;
-        this.description = props.description;
-        this.links = props.links;
-        this.additionalImageUrls = props.additionalImageUrls;
-    }
 }
 
 export interface WebsiteStackItemInfoLink {
