@@ -35,20 +35,14 @@ export interface TopSkillItem {
     name: string;
     percentage: number;
 }
-export interface BuiltWithItem {
-    iconUrl: string;
-    name: string;
-    links?: BuiltWithItemLink[];
+
+export interface WebsiteStackItemInfo {
+    title: string;
+    imageUrl: string;
 }
-export interface BuiltWithItemLink {
-    text: string;
-    url: string;
-}
-export interface WebsiteStackElementData {
+export interface WebsiteStackGraphElementData extends WebsiteStackItemInfo {
     handles?: HandleProps[];
     yPosition: number;
     column: 1 | 2 | 3;
     columnSpan?: 1 | 2 | 3;
-    title: string;
-    imageUrl: string;
 }
