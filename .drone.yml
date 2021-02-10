@@ -45,7 +45,10 @@ steps:
           PLUGIN_PASSWORD:
               from_secret: MAILGUN_SMTP_PASSWORD
           PLUGIN_RECIPIENTS_ONLY: true
-      status: [failure, changed]
+      when:
+          status:
+              - failure
+              - changed
 
 ---
 kind: secret
