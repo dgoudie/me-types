@@ -48,6 +48,14 @@ export interface WebsiteStackItemInfoLink {
     text: string;
     href: string;
 }
+
+export interface WebsiteStackItemInfoImage {
+    url: string;
+    width: number;
+    height: number;
+    title?: string;
+}
+
 export interface WebsiteStackGraphElementData extends WebsiteStackItemInfo {
     handles?: HandleProps[];
     yPosition: number;
