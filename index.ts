@@ -41,7 +41,7 @@ export interface WebsiteStackItemInfo {
     imageUrl: string;
     description: string;
     links?: WebsiteStackItemInfoLink[];
-    additionalImageUrls?: string[];
+    additionalImages?: WebsiteStackItemInfoImage[];
 }
 
 export interface WebsiteStackItemInfoLink {
