@@ -51,8 +51,6 @@ export interface WebsiteStackItemInfoLink {
 
 export interface WebsiteStackItemInfoImage {
     url: string;
-    width: number;
-    height: number;
     title?: string;
 }
 
