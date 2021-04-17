@@ -39,9 +39,6 @@ export interface TopSkillItem {
 export interface WebsiteStackItemInfo {
     title: string;
     imageUrl: string;
-    description: string;
-    links?: WebsiteStackItemInfoLink[];
-    additionalImages?: WebsiteStackItemInfoImage[];
 }
 
 export interface WebsiteStackItemInfoLink {
@@ -59,4 +56,16 @@ export interface WebsiteStackGraphElementData extends WebsiteStackItemInfo {
     yPosition: number;
     column: 1 | 2 | 3;
     columnSpan?: 1 | 2 | 3;
+}
+
+export interface WebsiteStackDialogTheme {
+    color: string;
+    backgroundColor: string;
+}
+
+export interface WebsiteStackDialogData extends WebsiteStackItemInfo {
+    description: string;
+    links?: WebsiteStackItemInfoLink[];
+    additionalImages?: WebsiteStackItemInfoImage[];
+    theme?: WebsiteStackDialogTheme;
 }
