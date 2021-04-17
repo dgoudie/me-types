@@ -7,9 +7,12 @@ export interface Info {
     about: string[];
     education: EducationItem[];
     workExperience: WorkExperienceItem[];
-    interests: string[];
     topSkills: TopSkillItem[];
-    websiteStackElements: Elements<WebsiteStackGraphElementData>;
+    websiteStack: InfoWebsiteStack;
+}
+export interface InfoWebsiteStack {
+    elements: Elements<WebsiteStackGraphElementData>;
+    edges: Elements<WebsiteStackGraphElementData>;
 }
 export interface Link {
     text: string;
