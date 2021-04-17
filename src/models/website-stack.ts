@@ -2,8 +2,6 @@ import { HandleProps, Node } from 'react-flow-renderer';
 
 export type WebsiteStackGraphElement = Node<WebsiteStackGraphElementData>;
 
-export type WebsiteStackDialogElement = Node<WebsiteStackDialogElementData>;
-
 export interface WebsiteStackElementData {
     imageUrl: string;
     title: string;
