@@ -1,6 +1,8 @@
 import { HandleProps, Node } from 'react-flow-renderer';
 
-export type WebsiteStackGraphElement = Node<WebsiteStackGraphElementData>;
+export type WebsiteStackGraphElement = Node<WebsiteStackGraphElementData> & {
+    data: WebsiteStackGraphElementData;
+};
 
 export interface WebsiteStackElementData {
     imageUrl: string;
