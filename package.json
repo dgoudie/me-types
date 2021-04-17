@@ -1,6 +1,6 @@
 {
     "name": "@dgoudie/me-types",
-    "version": "3.1.0-4",
+    "version": "4.0.0-0",
     "description": "types for resume sitepm",
     "main": "dist/index.js",
     "files": [
