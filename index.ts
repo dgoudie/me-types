@@ -12,7 +12,7 @@ export interface Info {
 }
 export interface InfoWebsiteStack {
     elements: Elements<WebsiteStackGraphElementData>;
-    edges: Elements<WebsiteStackGraphElementData>;
+    edges: Elements;
 }
 export interface Link {
     text: string;
