@@ -26,7 +26,7 @@ export type WebsiteStackDialogElementData = WebsiteStackElementData & {
 export interface WebsiteStackDialogTheme {
     color: string;
     backgroundColor: string;
-    linkTheme?: 'light' | 'dark';
+    linkTheme: 'light' | 'dark';
 }
 
 export interface WebsiteStackItemInfoLink {
