@@ -3,7 +3,8 @@ export interface RecentProject {
     imageUrl: string;
     summary: string;
     attributes: string[];
-    link: RecentProjectLink;
+    link?: RecentProjectLink;
+    additionalImageUrl?: string;
 }
 
 export interface RecentProjectLink {
