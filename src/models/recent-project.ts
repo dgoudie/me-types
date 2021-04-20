@@ -4,10 +4,15 @@ export interface RecentProject {
     summary: string;
     attributes: string[];
     link?: RecentProjectLink;
-    additionalImageUrl?: string;
+    additionalImageUrl?: RecentProjectAdditionalImage;
 }
 
 export interface RecentProjectLink {
     url: string;
     text: string;
+}
+
+export interface RecentProjectAdditionalImage {
+    url: string;
+    backgroundColor: string;
 }
