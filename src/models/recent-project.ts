@@ -4,7 +4,7 @@ export interface RecentProject {
     summary: string;
     attributes: string[];
     link?: RecentProjectLink;
-    additionalImageUrl?: RecentProjectAdditionalImage;
+    additionalImage?: RecentProjectAdditionalImage;
 }
 
 export interface RecentProjectLink {
